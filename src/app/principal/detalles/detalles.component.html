@@ -1,0 +1,25 @@
+<form class="container-sm p-4 w-50 mt-4 border rounded border-dark">
+    <h1 class="text.center text-dark">producto nro: {{filtrado[0].codigo}}</h1>
+    <section class="form-group">
+        <label for="" class="h4">código de barras</label>
+        <input [value]="filtrado[0].codigo" class="form-control" type="text" disabled>
+    </section>
+    <section>
+        <label for=""  class="h4">descripción</label>
+        <textarea [value]="filtrado[0].descripcion" class="form-control" name="asd" id="asd" cols="30" rows="3" ></textarea>
+    </section>
+    <section class="form-group">
+        <label for="" class="h4">precio de venta</label>
+        <input [value]="filtrado[0].precioV" class="form-control" type="text" >
+    </section>
+    <section class="form-group">
+        <label for="" class="h4">precio de compra</label>
+        <input [value]="filtrado[0].precioC" class="form-control" type="text">
+    </section>
+    <section class="form-group">
+        <label for="" class="h4">existencia</label>
+        <input [value]="filtrado[0].existencia" class="form-control" type="text" >
+    </section>
+</form>
+
+
